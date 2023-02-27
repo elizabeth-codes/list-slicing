@@ -24,8 +24,8 @@ def tail(input_list):
     ['Feb', 'Mar']
 
     """
-
-    return []
+    all_except_first = input_list[1:]
+    return all_except_first
 
 
 def last(input_list):
@@ -37,8 +37,9 @@ def last(input_list):
     'Mar'
 
     """
+    last_item_of_list = input_list[-1]
 
-    return []
+    return last_item_of_list
 
 
 def top(input_list):
@@ -50,8 +51,9 @@ def top(input_list):
     ['Jan', 'Feb']
 
     """
+    all_except_last = input_list[:-1]
 
-    return []
+    return all_except_last
 
 
 def first_three(input_list):
@@ -64,7 +66,9 @@ def first_three(input_list):
 
     """
 
-    return []
+    first_three = input_list[:3]
+
+    return first_three
 
 
 def last_five(input_list):
@@ -76,8 +80,9 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
+    last_five = input_list[-5:]
 
-    return []
+    return last_five
 
 
 def middle(input_list):
@@ -89,8 +94,8 @@ def middle(input_list):
     [6, 9, 12, 15, 18, 21]
 
     """
-
-    return []
+    middle = input_list[2:-2]
+    return middle
 
 
 def inner_four(input_list):
@@ -102,8 +107,8 @@ def inner_four(input_list):
     [6, 9, 12, 15]
 
     """
-
-    return []
+    inner_four = input_list[2:6]
+    return inner_four
 
 
 def inner_four_end(input_list):
@@ -118,8 +123,8 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
-
-    return []
+    inner_four_end = input_list[-6:-2]
+    return inner_four_end
 
 
 def replace_head(input_list):
@@ -135,8 +140,7 @@ def replace_head(input_list):
     [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
     """
-
-    pass
+    input_list[0] = 42
 
 
 def replace_third_and_last(input_list):
@@ -152,8 +156,8 @@ def replace_third_and_last(input_list):
     [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
 
     """
-
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def replace_middle(input_list):
@@ -172,8 +176,7 @@ def replace_middle(input_list):
     [0, 3, 42, 37, 24, 27]
 
     """
-
-    pass
+    input_list[2:-2] = [42, 37]
 
 
 def delete_third_and_seventh(input_list):
@@ -189,8 +192,8 @@ def delete_third_and_seventh(input_list):
     ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
 
     """
-
-    pass
+    del input_list[2]
+    del input_list[5]
 
 
 def delete_middle(input_list):
@@ -208,5 +211,4 @@ def delete_middle(input_list):
     ['Do', 'Re', 'Ti', 'Do']
 
     """
-
-    pass
+    del input_list [2:-2]
